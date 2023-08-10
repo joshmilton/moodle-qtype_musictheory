@@ -336,3 +336,191 @@ class MelodicMinorScale extends MinorScale {
 	}
 
 }
+
+/**
+* this class represents a lydian mode.
+*/
+class LydianMode extends Scale {
+
+	/**
+	 * Constructor.
+	 *
+	 * @param Note $tonic The tonic of the scale.
+	 * @return void
+	 */
+	public function __construct($tonic) {
+
+		parent::__construct($tonic);
+
+		$int_1 = new Interval('+', 'P', 1);
+		$int_2 = new Interval('+', 'M', 2);
+		$int_3 = new Interval('+', 'M', 3);
+		$int_4 = new Interval('+', 'A', 4);
+		$int_5 = new Interval('+', 'P', 5);
+		$int_6 = new Interval('+', 'M', 6);
+		$int_7 = new Interval('+', 'M', 7);
+		$int_8 = new Interval('+', 'P', 8);
+
+		array_push($this->intSequence, $int_1);
+		array_push($this->intSequence, $int_2);
+		array_push($this->intSequence, $int_3);
+		array_push($this->intSequence, $int_4);
+		array_push($this->intSequence, $int_5);
+		array_push($this->intSequence, $int_6);
+		array_push($this->intSequence, $int_7);
+		array_push($this->intSequence, $int_8);
+	}
+
+	/**
+	 * Returns a string describing the name of the scale (e.g. 'C lydian',
+	 * 'Ab lydian').
+	 *
+	 * @return string The scale name.
+	 */
+	public function getName() {
+
+		return ((string) tonic . getLetterAccidental()) . ' lydian';
+	}
+
+}
+
+/**
+* this class represents a mixolydian mode.
+*/
+class MixolydianMode extends Scale {
+
+	/**
+	 * Constructor.
+	 *
+	 * @param Note $tonic The tonic of the scale.
+	 * @return void
+	 */
+	public function __construct($tonic) {
+
+		parent::__construct($tonic);
+
+		$int_1 = new Interval('+', 'P', 1);
+		$int_2 = new Interval('+', 'M', 2);
+		$int_3 = new Interval('+', 'M', 3);
+		$int_4 = new Interval('+', 'P', 4);
+		$int_5 = new Interval('+', 'P', 5);
+		$int_6 = new Interval('+', 'M', 6);
+		$int_7 = new Interval('+', 'm', 7);
+		$int_8 = new Interval('+', 'P', 8);
+
+		array_push($this->intSequence, $int_1);
+		array_push($this->intSequence, $int_2);
+		array_push($this->intSequence, $int_3);
+		array_push($this->intSequence, $int_4);
+		array_push($this->intSequence, $int_5);
+		array_push($this->intSequence, $int_6);
+		array_push($this->intSequence, $int_7);
+		array_push($this->intSequence, $int_8);
+	}
+
+	/**
+	 * Returns a string describing the name of the scale (e.g. 'C mixolydian',
+	 * 'Ab lydian').
+	 *
+	 * @return string The scale name.
+	 */
+	public function getName() {
+
+		return ((string) tonic . getLetterAccidental()) . ' mixolydian';
+	}
+
+}
+
+/**
+* this class represents a lydian mode.
+*/
+class DorianMode extends Scale {
+
+	/**
+	 * Constructor.
+	 *
+	 * @param Note $tonic The tonic of the scale.
+	 * @return void
+	 */
+	public function __construct($tonic) {
+
+		parent::__construct($tonic);
+
+		$int_1 = new Interval('+', 'P', 1);
+		$int_2 = new Interval('+', 'M', 2);
+		$int_3 = new Interval('+', 'm', 3);
+		$int_4 = new Interval('+', 'P', 4);
+		$int_5 = new Interval('+', 'P', 5);
+		$int_6 = new Interval('+', 'M', 6);
+		$int_7 = new Interval('+', 'm', 7);
+		$int_8 = new Interval('+', 'P', 8);
+
+		array_push($this->intSequence, $int_1);
+		array_push($this->intSequence, $int_2);
+		array_push($this->intSequence, $int_3);
+		array_push($this->intSequence, $int_4);
+		array_push($this->intSequence, $int_5);
+		array_push($this->intSequence, $int_6);
+		array_push($this->intSequence, $int_7);
+		array_push($this->intSequence, $int_8);
+	}
+
+	/**
+	 * Returns a string describing the name of the scale (e.g. 'C dorian',
+	 * 'Ab lydian').
+	 *
+	 * @return string The scale name.
+	 */
+	public function getName() {
+
+		return ((string) tonic . getLetterAccidental()) . ' dorian';
+	}
+
+}
+
+/**
+* this class represents a lydian mode.
+*/
+class PhrygianMode extends Scale {
+
+	/**
+	 * Constructor.
+	 *
+	 * @param Note $tonic The tonic of the scale.
+	 * @return void
+	 */
+	public function __construct($tonic) {
+
+		parent::__construct($tonic);
+
+		$int_1 = new Interval('+', 'P', 1);
+		$int_2 = new Interval('+', 'm', 2);
+		$int_3 = new Interval('+', 'm', 3);
+		$int_4 = new Interval('+', 'P', 4);
+		$int_5 = new Interval('+', 'P', 5);
+		$int_6 = new Interval('+', 'm', 6);
+		$int_7 = new Interval('+', 'm', 7);
+		$int_8 = new Interval('+', 'P', 8);
+
+		array_push($this->intSequence, $int_1);
+		array_push($this->intSequence, $int_2);
+		array_push($this->intSequence, $int_3);
+		array_push($this->intSequence, $int_4);
+		array_push($this->intSequence, $int_5);
+		array_push($this->intSequence, $int_6);
+		array_push($this->intSequence, $int_7);
+		array_push($this->intSequence, $int_8);
+	}
+
+	/**
+	 * Returns a string describing the name of the scale (e.g. 'C phrygian',
+	 * 'Ab lydian').
+	 *
+	 * @return string The scale name.
+	 */
+	public function getName() {
+
+		return ((string) tonic . getLetterAccidental()) . ' phrygian';
+	}
+
+}

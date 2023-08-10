@@ -166,6 +166,30 @@ class qtype_musictheory_scale_identify_renderer extends qtype_musictheory_render
             case 'melodic':
                 $scale = new MelodicMinorScale($tonic);
                 break;
+                				case 'lydian':
+                $scale = new LydianMode($tonic);
+                break;
+            case 'mixolydian':
+                $scale = new MixolydianMode($tonic);
+                break;
+            case 'dorian':
+                $scale = new DorianMode($tonic);
+                break;
+            case 'phrygian':
+                $scale = new PhrygianMode($tonic);
+                break;
+
+            /* Remove comment once work out how broke it before
+            case 'pentatonic_major':
+                $scale = new PentatonicMajorScale($tonic);
+                break;
+            case 'pentatonic_minor':
+                $scale = new PentatonicMinorScale($tonic);
+                break;
+            case 'blues':
+                $scale = new BluesScale($tonic);
+                break;
+            */
             default:
                 $scale = new MajorScale($tonic);
         }

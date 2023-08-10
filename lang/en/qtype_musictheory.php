@@ -265,7 +265,16 @@ $string['scaletype_major'] = 'Major';
 $string['scaletype_natural'] = 'Natural minor';
 $string['scaletype_harmonic'] = 'Harmonic minor';
 $string['scaletype_melodic'] = 'Melodic minor';
-
+			//Added options by J Milton
+$string['scaletype_lydian'] = 'Lydian';
+$string['scaletype_mixolydian'] = 'Mixolydian';
+$string['scaletype_dorian'] = 'Dorian';
+$string['scaletype_phrygian'] = 'Phrygian';
+/* Remove comment once work out how broke it before
+$string['scaletype_pentatonic_major'] = 'Pentatonic major';
+$string['scaletype_pentatonic_minor'] = 'Pentatonic minor';
+$string['scaletype_blues'] = 'Blues';
+*/
 // Harmonic function types.
 $string['hftype_diatonictriad'] = 'Diatonic triad';
 $string['hftype_dom7th'] = 'Dominant seventh';

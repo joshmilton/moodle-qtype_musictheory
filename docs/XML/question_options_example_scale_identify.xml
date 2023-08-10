@@ -16,6 +16,16 @@
       <possiblescaletype>major</possiblescaletype>
       <possiblescaletype>natural</possiblescaletype>
       <possiblescaletype>melodic</possiblescaletype>
+		<!-- Added by Josh Milton 10/08-->
+		<possiblescaletype>lydian</possiblescaletype>
+		<possiblescaletype>mixolydian</possiblescaletype>
+		<possiblescaletype>dorian</possiblescaletype>
+		<possiblescaletype>phrygian</possiblescaletype>
+		<!--Remove comment when added odd scales
+		<possiblescaletype>pentatonic_major</possiblescaletype>
+		<possiblescaletype>pentatonic_minor</possiblescaletype>
+		<possiblescaletype>blues</possiblescaletype>
+		-->
     </possiblescalesinresponse>
   </scale-identify>
 </options>
