@@ -79,7 +79,7 @@ class qtype_musictheory_scale_write extends qtype_musictheory_question implement
             case 'phrygian':
                 $scale = new PhrygianMode($tonic);
                 break;
-            /* Remove comment once work out how broke it before
+            
             case 'pentatonic_major':
                 $scale = new PentatonicMajorScale($tonic);
                 break;
@@ -89,7 +89,7 @@ class qtype_musictheory_scale_write extends qtype_musictheory_question implement
             case 'blues':
                 $scale = new BluesScale($tonic);
                 break;
-                */
+                
             default:
                 $scale = new MajorScale($tonic);
         }

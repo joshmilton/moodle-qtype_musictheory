@@ -270,11 +270,11 @@ $string['scaletype_lydian'] = 'Lydian';
 $string['scaletype_mixolydian'] = 'Mixolydian';
 $string['scaletype_dorian'] = 'Dorian';
 $string['scaletype_phrygian'] = 'Phrygian';
-/* Remove comment once work out how broke it before
+
 $string['scaletype_pentatonic_major'] = 'Pentatonic major';
 $string['scaletype_pentatonic_minor'] = 'Pentatonic minor';
 $string['scaletype_blues'] = 'Blues';
-*/
+
 // Harmonic function types.
 $string['hftype_diatonictriad'] = 'Diatonic triad';
 $string['hftype_dom7th'] = 'Dominant seventh';
