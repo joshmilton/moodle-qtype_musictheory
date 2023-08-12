@@ -49,7 +49,8 @@ class qtype_musictheory_chordquality_write extends qtype_musictheory_question im
     }
 
     public function get_correct_response() {
-        switch ($this->musictheory_chordquality) {
+       /* Old quality settings, replaced with mapping
+       switch ($this->musictheory_chordquality) {
             case 'major':
                 $quality = 'M';
                 break;
@@ -65,6 +66,14 @@ class qtype_musictheory_chordquality_write extends qtype_musictheory_question im
             default:
                 $quality = 'M';
         }
+        */
+        /*New default chord quality else read*/ 
+           $dataquality = $this->musictheory_chordquality;
+        if (!isset(Chord::$mapping[$dataquality]))
+            $quality = 'M';
+        else
+            $quality = Chord::$mapping[$dataquality];
+
         if ($this->musictheory_clef === 'treble') {
             $reg = 4;
         } else {
