@@ -34,8 +34,6 @@ class Chord {
         "minor" => "m",
         "augmented" => "A",
         "diminished" => "D",
-        "major6" => "Gr6",
-        "minor6" => "m6",
         "major7" => "MM",
         "minor7" => "mm",
         "dom7" => "Mm",
@@ -45,6 +43,9 @@ class Chord {
         "power" => "PC",
         "sus2" => "sus2",
         "sus4" => "sus4",
+		/* unnecessary
+        "major6" => "Gr6",
+        "minor6" => "m6",
         "six" => "It6",
         "sixb5" => "Fr6",
         "dom7a5" => "Am",
@@ -56,6 +57,7 @@ class Chord {
         "domb911" => "domb911",
         "dom13" => "dom13",
         "domb9b13" => "dom9b13",
+		*/
     );
 
 
@@ -189,11 +191,6 @@ class Chord {
 				$this->intSequence[5] = new Interval('+', 'm', 13);
 				break;
 
-				case 'm6' :
-                $this->intSequence[0] = new Interval('+', 'm', 3);
-                $this->intSequence[1] = new Interval('+', 'P', 5);
-                $this->intSequence[2] = new Interval('+', 'A', 6);
-                break;
             case 'PC' :
                 $this->intSequence[0] = new Interval('+', 'P', 5);
                 $this->intSequence[0] = new Interval('+', 'P', 8);
@@ -206,6 +203,14 @@ class Chord {
                 $this->intSequence[0] = new Interval('+', 'P', 4);
                 $this->intSequence[1] = new Interval('+', 'P', 5);
                 break;
+
+				/* unnecessary
+				case 'm6' :
+                $this->intSequence[0] = new Interval('+', 'm', 3);
+                $this->intSequence[1] = new Interval('+', 'P', 5);
+                $this->intSequence[2] = new Interval('+', 'A', 6);
+                break;
+				*/
 		}
 	}
 

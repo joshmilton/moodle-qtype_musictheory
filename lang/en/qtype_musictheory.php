@@ -174,8 +174,6 @@ $string['ebminor'] = 'E&#9837; minor';
 $string['abminor'] = 'A&#9837; minor';
 
 // Chord qualities.
-$string['major6'] = 'Major 6 (German Augmented 6th)';
-$string['minor6'] = 'Minor 6';
 $string['major7'] = 'Major 7';
 $string['minor7'] = 'Minor 7';
 $string['dom7'] = 'Dominant 7';
@@ -185,6 +183,9 @@ $string['minor_major7'] = 'Minor Major 7';
 $string['power'] = 'Power Chord';
 $string['sus2'] = 'Sus2';
 $string['sus4'] = 'Sus4';
+/* unnecessary
+$string['major6'] = 'Major 6 (German Augmented 6th)';
+$string['minor6'] = 'Minor 6';
 $string['six'] = 'Sixth Triad (Italian Augmented 6th)';
 $string['sixb5'] = 'Major 6 b5 (French Augmented 6th)';
 $string['dom7a5'] = 'Dominant 7 #5';
@@ -195,7 +196,7 @@ $string['domb9'] = 'Dominant b9';
 $string['dom11'] = 'Dominant 11';
 $string['domb911'] = 'Dominant b9 11';
 $string['dom13'] = 'Dominant 13';
-$string['domb9b13'] = 'Dominant b9 b13';
+$string['domb9b13'] = 'Dominant b9 b13'; */
 
 
 
